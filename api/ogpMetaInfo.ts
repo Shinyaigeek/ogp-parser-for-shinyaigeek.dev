@@ -10,5 +10,7 @@ export default async (request: VercelRequest, response: VercelResponse) => {
     return url[0];
   };
   const ogp = await ogpParser(validateUrl(request.query.url));
+  response.setHeader("Access-Control-Allow-Origin", "https://shinyaigeek.dev")
+  response.setHeader("Cache-Control", "s-maxage=3600, stale-while-revalidate");
   response.status(200).json(ogp);
 };
