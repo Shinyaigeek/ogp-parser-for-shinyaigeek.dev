@@ -1,0 +1,14 @@
+{
+  "name": "ogp-parser-for-shinyaigeek.dev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Shinyaigeek/ogp-parser-for-shinyaigeek.dev.git",
+  "author": "Shinyaigeek <Philispaxil@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "ogp-parser": "^0.6.0"
+  }
+}
